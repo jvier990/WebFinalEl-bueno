@@ -65,14 +65,15 @@ const deleteTask = async (req, res, next) => {
 const updateTask = async (req, res, next) => {
   console.log(req.params.id);
   const idP = req.params.id;
-  const { ID, Modelo, Marca, Año, Precio, Descripcion } = req.body;
-  console.log("Parametro: " + idP + "!=" + ID);
+  const { id, Modelo, Marca, Año, Precio, Descripcion } = req.body;
+  console.log("Parametro: " + idP + "!=" + id);
   try {
     const result = await db.query(
       'update "Concesionarios_El_Rayo_McQueen_QCHAU"."Automoviles" set  "ID" = $1, "Modelo" =$2, "Marca"=$3,"Año" =$4,"Precio" =$5, "Descripcion" =$6  where "ID" = $7',
-      [ID, Modelo, Marca, Año, Precio, Descripcion, idP]
+      [id, Modelo, Marca, Año, Precio, Descripcion, idP]
     );
-    res.send("Han sido cambiado: " + result.rowCount);
+
+    res.status(404).json({ massage: "Han sido cambiado: " + result.rowCount });
     console.log(result);
   } catch (error) {
     next(error);

@@ -44,7 +44,7 @@ export default function TaskForm() {
     const res = await fetch(`http://localhost:4000/task/${id}`);
 
     const data = await res.json();
-    console.log("LO QUE HAY EN DATA: " + data.ID);
+    console.log("LO QUE HAY EN DATA: " + data.ID + data.Modelo);
     setTask({
       id: data.ID,
       Modelo: data.Modelo,
@@ -53,7 +53,6 @@ export default function TaskForm() {
       Año: data.Año,
       Descripcion: data.Descripcion,
     });
-    console.log("LO QUE HAY EN TASK: " + task.id);
 
     setEditing(true);
   };
@@ -64,15 +63,18 @@ export default function TaskForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    console.log("LO QUE HAY EN TASK: " + task.id + task.Modelo);
+    console.log(task);
 
     if (editing) {
       console.log("PARAMETRO PARA UPDATED: " + params.id);
       const res = await fetch(`http://localhost:4000/task/${params.id}`, {
         method: "PUT",
-        body: JSON.stringify(task),
+
         headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(task),
       });
-      const data = await res.json;
+      const data = await res.json();
       console.log(data);
     } else {
       await fetch("http://localhost:4000/task", {
