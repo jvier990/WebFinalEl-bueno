@@ -1,6 +1,6 @@
 const { config } = require("dotenv");
 config();
-console.log("USUARIO: " + process.env.DB_DATABASE);
+//console.log("USUARIO: " + process.env.DB_DATABASE);
 module.exports = {
   db_credentials: {
     user: process.env.DB_USER,

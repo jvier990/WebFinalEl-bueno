@@ -22,6 +22,7 @@ export default function TaskForm() {
 
   const params = useParams();
   const navigate = useNavigate();
+
   const handleChange = (e) => {
     setTask({ ...task, [e.target.name]: e.target.value });
     console.log(
@@ -181,7 +182,7 @@ export default function TaskForm() {
                 {loading ? (
                   <CircularProgress color="inherit" size={24} />
                 ) : (
-                  "Create"
+                  "Save"
                 )}
               </Button>
             </form>

@@ -1,11 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { Card, CardContent, Typography, Button } from "@mui/material";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 export default function TaskList() {
   const [tasks, setTastks] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const loadTask = async () => {
     const res = await fetch("http://localhost:4000/task");
@@ -31,7 +31,7 @@ export default function TaskList() {
   }, []);
   return (
     <>
-      <h1>Task list</h1>
+      <h1>Registro de Automoviles</h1>
       {tasks.map((task) => (
         <Card
           style={{ marginBottom: ".7rem", backgroundColor: "#1e272e" }}

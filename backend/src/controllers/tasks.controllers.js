@@ -1,11 +1,12 @@
 const db = require("../db");
 
 const getAllTask = async (req, res, next) => {
-  console.log("estoy en all tasks");
+  console.log("estoy en all task");
   try {
     const result = await db.query(
       '   select * from "Concesionarios_El_Rayo_McQueen_QCHAU"."Automoviles"'
     );
+    console.log(result.rows);
     res.json(result.rows);
   } catch (error) {
     next(error);
