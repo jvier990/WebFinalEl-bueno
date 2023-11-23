@@ -6,15 +6,12 @@ const Autos = () => {
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              Pitchfork Kickstarter Taxidermy
+              Bienvenido mira nuestro catalogo de autos:
             </h1>
             <div class="h-1 w-20 bg-indigo-500 rounded"></div>
           </div>
           <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably heard
-            of them man bun deep jianbing selfies heirloom prism food truck ugh
-            squid celiac humblebrag.
+            Tenemos de todos precios sabores y colores :)
           </p>
         </div>
         <div class="flex flex-wrap -m-4">
@@ -26,14 +23,13 @@ const Autos = () => {
                 alt="content"
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                SUBTITLE
+                Poderosisimo Tsuru tuneado
               </h3>
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                Chichen Itza
+                En $150'000.00
               </h2>
               <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon disrupt edison bulbche.
+                Solo le hace falta el cambio de aceite maestro
               </p>
             </div>
           </div>
@@ -45,53 +41,12 @@ const Autos = () => {
                 alt="content"
               />
               <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                SUBTITLE
+                Increible bochito
               </h3>
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                Colosseum Roma
+                Te lo regalamos, favor de comunicarse al (686) 335 4028
               </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon disrupt edison bulbche.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/722x402"
-                alt="content"
-              />
-              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                SUBTITLE
-              </h3>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                Great Pyramid of Giza
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon disrupt edison bulbche.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/723x403"
-                alt="content"
-              />
-              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
-                SUBTITLE
-              </h3>
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                San Francisco
-              </h2>
-              <p class="leading-relaxed text-base">
-                Fingerstache flexitarian street art 8-bit waistcoat. Distillery
-                hexagon disrupt edison bulbche.
-              </p>
+              <p class="leading-relaxed text-base">(No sirve)</p>
             </div>
           </div>
         </div>
