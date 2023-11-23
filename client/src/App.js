@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import Menu from "./components/NatBar";
+import Inicio from "./screens/inicio";
+import Users from "./screens/users";
 import { Container } from "@mui/material";
 
 export default function App() {
@@ -10,7 +12,9 @@ export default function App() {
       <Menu></Menu>
       <Container>
         <Routes>
-          <Route path="/" element={<TaskList />} />
+          <Route path="/" element={<Inicio />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/autos" element={<TaskList />} />
           <Route path="/tasks/new" element={<TaskForm />} />
           <Route path="/tasks/:id/edit" element={<TaskForm />} />
         </Routes>

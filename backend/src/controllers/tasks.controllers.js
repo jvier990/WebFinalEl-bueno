@@ -4,7 +4,7 @@ const getAllTask = async (req, res, next) => {
   console.log("estoy en all task");
   try {
     const result = await db.query(
-      '   Select * from "Concesionarios_El_Rayo_McQueen_QCHAU"."Usuarios" '
+      '   Select * from "Concesionarios_El_Rayo_McQueen_QCHAU"."Automoviles" '
     );
     console.log(result.rows);
     res.json(result.rows);
