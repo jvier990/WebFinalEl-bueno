@@ -26,7 +26,7 @@ export default function NatBar() {
               color="secondary"
               onClick={() => navigate("/tasks/new")}
             >
-              Agregar automovil
+              Agregar
             </Button>
           </Toolbar>
         </Container>

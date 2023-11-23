@@ -8,7 +8,7 @@ export default function TaskList() {
 
   return (
     <>
-      <h1>Registro de Automoviles</h1>
+      <h1>Admin App</h1>
 
       <Card style={{ marginBottom: ".7rem", backgroundColor: "#1e272e" }}>
         <CardContent

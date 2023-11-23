@@ -53,7 +53,7 @@ export default function Users() {
               <Button
                 variant="contained"
                 color="inherit"
-                onClick={() => navigate(`/tasks/${task.id}/edit`)}
+                onClick={() => navigate(`/users/edit/${task.id}`)}
               >
                 Edit
               </Button>
